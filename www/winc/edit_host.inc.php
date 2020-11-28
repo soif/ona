@@ -359,6 +359,7 @@ EOL;
                     size="25" maxlength="64"
                 >
                 <span id="qf_free_ip_{$window_name}" title="Available IP Quick Search"><img src="{$images}/silk/find.png" border="0"/></span>
+                &nbsp;<span id="iptomac_{$window_name}" title="Set MAC Address from IP" onClick="xajax_iptomac(document.getElementById('set_ip_{$window_name}').value,'set_mac_{$window_name}')"><img src="{$images}/silk/arrow_down.png" border="0"/></span>
                 <div id="suggest_set_ip_{$window_name}" class="suggest"></div>
             </td>
         </tr>
@@ -369,6 +370,7 @@ EOL;
             </td>
             <td class="padding" align="left" width="100%">
                 <input
+                    id="set_mac_{$window_name}"
                     name="set_mac"
                     alt="MAC Address"
                     value="{$interface['mac_addr']}"

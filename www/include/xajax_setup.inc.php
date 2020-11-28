@@ -48,6 +48,7 @@ $conf['html_headers'] .= '<script type="text/javascript" src="'.$baseURL.'/inclu
 $conf['html_headers'] .= '<script type="text/javascript" src="'.$baseURL.'/include/xajax_webwin/webwinTT.js"></script>' . "\n";
 $conf['html_headers'] .= '<link rel="stylesheet" type="text/css" href="'.$baseURL.'/include/xajax_webwin/webwin.css" />' . "\n";
 
+require_once("{$include}/xajax_iptomac/iptomac.inc.php");
 
 // These aren't AJAX, but it's part of our "Advanced Development Kit" ;-)
 
